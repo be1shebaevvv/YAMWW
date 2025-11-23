@@ -1,4 +1,4 @@
-/* 🌸 Основной фон и стиль */
+
 body {
     margin: 0;
     padding: 0;
@@ -14,7 +14,6 @@ body {
     position: relative;
 }
 
-/* 🌷 Контент в центре */
 .content {
     position: relative;
     z-index: 2;
@@ -52,13 +51,12 @@ p {
     transform: translateY(-3px);
 }
 
-/* 🌸 Анимация плавного появления контента */
 @keyframes fadeIn {
     from {opacity: 0; transform: translateY(20px);}
     to {opacity: 1; transform: translateY(0);}
 }
 
-/* 🌟 Контейнер для фото */
+
 .photo-container {
     position: fixed;
     top: 0;
@@ -70,7 +68,7 @@ p {
     z-index: 1;
 }
 
-/* 🖼 Фото */
+
 .photo {
     position: absolute;
     width: 280px;
@@ -85,12 +83,12 @@ p {
     pointer-events: none;
 }
 
-/* 💫 Случайное лёгкое покачивание */
+
 .photo:hover {
     transform: scale(1.03);
 }
 
-/* 💞 Сердечки */
+
 .heart {
     position: absolute;
     width: 18px;
@@ -122,7 +120,7 @@ p {
     top: 0;
 }
 
-/* 💫 Анимация подъёма сердечек вверх */
+
 @keyframes floatUp {
     0% {
         transform: translateY(100vh) rotate(45deg);
@@ -134,7 +132,7 @@ p {
     }
 }
 
-/* 🌈 Нижний текст */
+
 footer {
     position: absolute;
     bottom: 10px;
@@ -144,7 +142,6 @@ footer {
 }
 
 
-/* 🖼 Адаптивные размеры для телефонов */
 @media (max-width: 768px) {
     .photo {
         width: 180px;
