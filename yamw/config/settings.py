@@ -15,7 +15,13 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 # Security
 SECRET_KEY = 'django-insecure-^=m7fhhdewv0s995lj80)_4#4i^q2(8b=$bj=jr=7*5zpe_&vz'
 DEBUG = True  # для продакшена ставьте False
-ALLOWED_HOSTS = ['*']  # позже можно заменить на 'yamww.onrender.com'
+ALLOWED_HOSTS = [
+    '127.0.0.1',
+    'localhost',
+    'yourusername.pythonanywhere.com',
+]
+
+  # позже можно заменить на 'yamww.onrender.com'
 
 # Installed apps
 INSTALLED_APPS = [
@@ -39,7 +45,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'yamw.urls'
+ROOT_URLCONF = 'config.urls'
 
 TEMPLATES = [
     {
@@ -57,7 +63,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'yamw.wsgi.application'
+WSGI_APPLICATION = 'config.wsgi.application'
 
 # Database (SQLite для простого деплоя)
 DATABASES = {
