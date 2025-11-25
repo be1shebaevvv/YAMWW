@@ -14,7 +14,7 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 # Security
 SECRET_KEY = 'django-insecure-^=m7fhhdewv0s995lj80)_4#4i^q2(8b=$bj=jr=7*5zpe_&vz'
-DEBUG = True  # для продакшена ставьте False
+DEBUG = False  # для продакшена ставьте False
 ALLOWED_HOSTS = [
     '127.0.0.1',
     'localhost',
